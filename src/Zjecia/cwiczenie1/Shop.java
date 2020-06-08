@@ -1,3 +1,5 @@
+package Zjecia.cwiczenie1;
+
 public class Shop {
     public static void main(String[] args) {
         Product product1 = new Product("TV", "Samsung", 6000, true);

@@ -1,3 +1,5 @@
+package Zjecia.cwiczenie1;
+
 public class Product {
     String name;
     String producer;
