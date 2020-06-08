@@ -46,4 +46,14 @@ public class Product {
 
 
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", producer='" + producer + '\'' +
+                ", price=" + price +
+                ", isAvailable=" + isAvailable +
+                '}';
+    }
 }
