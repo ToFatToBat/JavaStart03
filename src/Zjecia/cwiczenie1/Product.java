@@ -1,10 +1,17 @@
 package Zjecia.cwiczenie1;
 
 public class Product {
-    String name;
-    String producer;
-    double price;
-    boolean isAvailable;
+    private String name;
+    private Producer producer;
+    private double price;
+    private boolean isAvailable;
+
+    public Product(String name, Producer producer, double price, boolean isAvailable) {
+        this.name = name;
+        this.producer = producer;
+        this.price = price;
+        this.isAvailable = isAvailable;
+    }
 
     public String getName() {
         return name;
@@ -14,11 +21,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getProducer() {
+    public Producer getProducer() {
         return producer;
     }
 
-    public void setProducer(String producer) {
+    public void setProducer(Producer producer) {
         this.producer = producer;
     }
 
@@ -38,20 +45,11 @@ public class Product {
         isAvailable = available;
     }
 
-    public Product(String name, String producer, double price, boolean isAvailable) {
-        this.name = name;
-        this.producer = producer;
-        this.price = price;
-        this.isAvailable = isAvailable;
-
-
-    }
-
     @Override
     public String toString() {
         return "Product{" +
                 "name='" + name + '\'' +
-                ", producer='" + producer + '\'' +
+                ", producer=" + producer +
                 ", price=" + price +
                 ", isAvailable=" + isAvailable +
                 '}';
