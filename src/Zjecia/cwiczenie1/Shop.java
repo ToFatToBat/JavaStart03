@@ -18,4 +18,5 @@ public class Shop {
         System.out.println(product2.toString());
         System.out.println(product3.toString());
     }
+
 }
