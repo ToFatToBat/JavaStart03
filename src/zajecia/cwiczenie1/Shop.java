@@ -1,4 +1,4 @@
-package Zjecia.cwiczenie1;
+package zajecia.cwiczenie1;
 
 public class Shop {
     public static void main(String[] args) {
