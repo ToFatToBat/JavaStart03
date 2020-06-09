@@ -2,16 +2,9 @@ package homework.classesAndObjects;
 
 public class App {
     public static void main(String[] args) {
-        Headphones JBL = new Headphones();
-        Headphones Bose = new Headphones();
+        Headphones JBL = new Headphones("JBL", "purple", true);
+        Headphones Bose = new Headphones("Bose", "Black", true);
 
-        JBL.make = "JBL";
-        JBL.colour = "purple";
-        JBL.bluetooth = true;
-
-        Bose.make = "Bose";
-        Bose.colour = "Black";
-        Bose.bluetooth = true;
 
         System.out.println(JBL.toString());
         System.out.println(Bose.toString());
