@@ -5,12 +5,9 @@ public class MethodLearning {
     private double b;
     private final double PI = 3.16;
 
-    public MethodLearning(int a, double b) {
-        this.a = a;
-        this.b = b;
-    }
 
-    public void isEven () {
+
+    public void isEven (int a) {
         if( a % 2 == 0){
 
             System.out.println("Parzysta");
@@ -19,7 +16,7 @@ public class MethodLearning {
         }
     }
 
-    public boolean isOdd (){
+    public boolean isOdd (int a){
         boolean oddCheck;
         if( a % 2 == 0){
             oddCheck = false;
@@ -29,11 +26,11 @@ public class MethodLearning {
         return oddCheck;
     }
 
-    public double circleField(){
+    public double circleField(double b){
         return PI * (b *b);
     }
 
-    public int power() {
+    public int power(int a) {
         return a * a;
     }
 }
