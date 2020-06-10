@@ -6,8 +6,8 @@ public class App {
         MethodLearning methodLearning1 = new MethodLearning();
 
 
-        methodLearning1.isEven(2);
-        System.out.println( methodLearning1.isOdd(2));
+        methodLearning1.isEven(3);
+        System.out.println( methodLearning1.isOdd(3));
         System.out.println(methodLearning1.circleField(5.5));
         System.out.println(methodLearning1.power(4));
 

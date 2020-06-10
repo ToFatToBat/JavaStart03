@@ -17,13 +17,7 @@ public class MethodLearning {
     }
 
     public boolean isOdd (int a){
-        boolean oddCheck;
-        if( a % 2 == 0){
-            oddCheck = false;
-        }else {
-            oddCheck = true;
-        }
-        return oddCheck;
+        return a % 2 == 0;
     }
 
     public double circleField(double b){
