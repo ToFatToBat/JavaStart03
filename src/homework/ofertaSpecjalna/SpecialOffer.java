@@ -3,8 +3,8 @@ package homework.ofertaSpecjalna;
 public class SpecialOffer {
    private Product product;
     private int daysOfPromotion;
-    private int discount;
-    private double discountPrice = (1 - discount/100) * product.getPrice();
+    private double discount;
+    private double discountPrice;
 
 
 
@@ -15,7 +15,7 @@ public class SpecialOffer {
     }
 
     public double getDiscountPrice() {
-        return discountPrice;
+        return ((1 - discount/100) * product.getPrice());
     }
 
     public void setDiscountPrice(int discountPrice) {
@@ -38,7 +38,7 @@ public class SpecialOffer {
         this.daysOfPromotion = daysOfPromotion;
     }
 
-    public int getDiscount() {
+    public double getDiscount() {
         return discount;
     }
 

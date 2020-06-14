@@ -7,9 +7,11 @@ public class App {
         Product Asus = new Product("Asus", 5000, "Most efficient computer for games", computers);
         Product IBM = new Product("IBM", 9000, "Most powerful computer for business", computers);
         Product Epson = new Product("Epson", 2200, "Printer for labour", printers);
-        SpecialOffer specialOfferAsus = new SpecialOffer(Asus, 10,5);
+        Product Leica = new Product("Leica", 15000,"Best camera for portrait pictures", null);
+        SpecialOffer specialOfferAsus = new SpecialOffer(Asus, 10,20);
 
-        System.out.println(specialOfferAsus.toString());
+        System.out.println(specialOfferAsus.getDiscountPrice());
+        System.out.println(Leica.toString());
 
     }
 }
